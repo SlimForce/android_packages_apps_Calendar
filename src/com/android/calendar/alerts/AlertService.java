@@ -273,7 +273,7 @@ public class AlertService extends Service {
             Log.d(TAG, "Beginning updateAlertNotification");
         }
 
-        if (!prefs.getBoolean(GeneralPreferences.KEY_ALERTS, true)) {
+        if (!prefs.getBoolean(GeneralPreferences.KEY_ALERTS, false)) {
             if (DEBUG) {
                 Log.d(TAG, "alert preference is OFF");
             }
